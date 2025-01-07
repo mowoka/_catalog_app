@@ -1,2 +1,12 @@
-scripts
-app/expo/app.config.ts
+.next/*
+*.css
+dist
+esm/*
+public/*
+tests/*
+scripts/*
+*.config.js
+node_modules
+coverage
+.next
+build

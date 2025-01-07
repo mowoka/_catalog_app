@@ -1,3 +1,5 @@
-.yarn
-.yarnrc.yml
-readme.md
+dist
+node_modules
+.next
+build
+scripts
