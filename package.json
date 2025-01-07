@@ -6,7 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
+    "postinstall": "husky install",
+    "pre-commit": "lint-staged",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --ignore-path .gitignore --fix",
+      "prettier --ignore-path .gitignore --write"
+    ]
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -25,8 +35,12 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.22",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
     "postcss": "^8",
+    "prettier": "^3.4.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
