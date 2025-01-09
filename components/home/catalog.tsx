@@ -11,13 +11,15 @@ export function Catalog() {
           alt="book placeholder"
           width={286}
           height={286}
-          objectFit="contain"
           className="rounded-lg"
+          style={{objectFit: "cover"}}
         />
       </div>
       <div className="p-3">
-        <p>40 Alasan Kenapa Ilmu Agama Lebih Baik Daripada Harta</p>
-        <p className="mt-1">Rp 25.000</p>
+        <p className="font-medium font-montserat text-xs">
+          40 Alasan Kenapa Ilmu Agama Lebih Baik Daripada Harta
+        </p>
+        <p className="mt-1 font-bold font-roboto text-sm text-red-400">Rp 25.000</p>
       </div>
     </Card>
   );

@@ -1,12 +1,11 @@
+import {SearchOutlined} from "@ant-design/icons";
 import {Button} from "../ui/button";
 
 export function Header() {
   return (
     <div className="w-full h-16 border-b border-border py-3 px-5 flex flex-row justify-between items-center">
       <div>
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-primary-foreground">
-          Catalog App
-        </h3>
+        <SearchOutlined className="text-primary-foreground text-2xl" />
       </div>
 
       <div className="flex flex-row justify-start items-start">
