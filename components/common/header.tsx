@@ -5,14 +5,15 @@ export function Header() {
   return (
     <div className="w-full h-16 border-b border-border py-3 px-5 flex flex-row justify-between items-center">
       <div>
-        <SearchOutlined className="text-primary-foreground text-2xl" />
+        <SearchOutlined className="text-alternativeTwo text-2xl" />
       </div>
 
-      <div className="flex flex-row justify-start items-start">
-        <Button variant="secondary" size="sm">
+      <div className="flex flex-row justify-start items-center">
+        <Button variant="link" size="sm" className="text-alternativeTwo font-semibold text-base">
           Log In
         </Button>
-        <Button variant="secondary" size="sm" className="ml-4">
+        <div className="h-[25px] w-[1px] border-r border-alternativeTwo mx-2" />
+        <Button variant="link" size="sm" className="text-alternativeTwo font-semibold text-base">
           Register
         </Button>
       </div>
